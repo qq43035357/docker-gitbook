@@ -1,7 +1,8 @@
 FROM node:slim
 
 RUN npm install gitbook-cli -g &&\
-    mkdir -p /book
+    mkdir -p /book &&\
+    gitbook install
 
 WORKDIR /book
 
