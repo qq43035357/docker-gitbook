@@ -6,7 +6,6 @@ RUN npm install gitbook-cli -g &&\
 
 WORKDIR /book
 
-EXPOSE 4000 35729
+EXPOSE 4000
 
-CMD ["gitbook", "serve"]
-
+CMD ["gitbook", "serve", "--no-watch", "--no-live"]
